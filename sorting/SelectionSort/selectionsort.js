@@ -31,14 +31,18 @@ function selectionSort(array){
                 minStart = j;
             }
         }
-        // Swap the current lowest to the first position and the value in the 
-        // first position is moved to the current lowest value's position
-        [ array[i], array[minStart] ] = [ array[minStart], array[i] ];
 
-        // console.log(array);
+        // If "i" is same as "minStart" we don't need a swap.
+        if(i !== minStart){
+            
+            // Swap the current lowest to the first position and the value in the 
+            // first position is moved to the current lowest value's position
+            [ array[i], array[minStart] ] = [ array[minStart], array[i] ];
+            console.log(array);
+        }
     }
     return array;
 }
 
 console.log(selectionSort([0,5,6,4,3,7,2,8,1,0]));
-console.log(selectionSort([10,5,60,4,35,7,2,8,11,20]));
+// console.log(selectionSort([10,5,60,4,35,7,2,8,11,20]));
