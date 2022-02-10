@@ -18,7 +18,6 @@ const validateSubArray = (arr, subArr) => {
         for (arrIndex; arrIndex < arrlength; arrIndex++) {
 
             if (arr[arrIndex] === subArr[subArrIndex]) {
-                console.log(arr[arrIndex], subArr[subArrIndex]);
                 subArrIndex++;
                 if (subArrIndex === subArrLength) return 'String validated';
             }
